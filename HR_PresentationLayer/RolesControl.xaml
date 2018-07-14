@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="HR_PresentationLayer.RolesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HR_PresentationLayer"
+             mc:Ignorable="d" 
+              d:DesignHeight="659.5" d:DesignWidth="1296" Background="White" Foreground="Black" Loaded="UserControl_Loaded">
+    <Grid>
+        <Label x:Name="label" Content="Role Id" HorizontalAlignment="Left" Margin="268,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Role Name" HorizontalAlignment="Left" Margin="268,179,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtRoleId" Width="100" HorizontalAlignment="Left" Margin="392,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRoleName" HorizontalAlignment="Left" Height="32" Margin="392,173,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="lsSearch" HorizontalAlignment="Left" Height="34" Margin="834,397,0,0" VerticalAlignment="Top" Width="100" />
+        <Button x:Name="btnAdd" Content="Insert" Click="btnAdd_Click" HorizontalAlignment="Left" Margin="834,110,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnDelete" Content="Delete" Click="btnDelete_Click" HorizontalAlignment="Left" Margin="834,249,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnUpdate" Content="Update" Click="btnUpdate_Click" HorizontalAlignment="Left" Margin="834,179,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click" HorizontalAlignment="Left" Margin="834,315,0,0" VerticalAlignment="Top" Width="100"/>
+        <DataGrid x:Name="dgRecords" HorizontalAlignment="Left" Margin="264,301,0,0" VerticalAlignment="Top" Width="370" Height="130"/>
+
+    </Grid>
+</UserControl>

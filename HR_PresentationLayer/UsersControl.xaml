@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="HR_PresentationLayer.UsersControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HR_PresentationLayer"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"  d:DesignHeight="659.5" d:DesignWidth="1296" Background="White" Foreground="Black">
+    <Grid>
+        <Label x:Name="label" Content="User Id" HorizontalAlignment="Left" Margin="408,114,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="408,164,0,0"/>
+        <Label x:Name="label2" Content="Password" HorizontalAlignment="Left" Margin="408,218,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Firstname" HorizontalAlignment="Left" Margin="408,270,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Lastname" HorizontalAlignment="Left" Margin="411,320,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtUserId" Width="100" HorizontalAlignment="Left" Margin="571,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="44" Margin="576,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="39" Margin="576,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFirstname" HorizontalAlignment="Left" Height="49" Margin="576,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Height="41" Margin="576,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdd" Click="btnAdd_Click" Content="Insert" HorizontalAlignment="Left" Margin="981,120,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnDelete" Click="btnDelete_Click" Content="Delete" HorizontalAlignment="Left" Margin="981,244,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Search" HorizontalAlignment="Left" Margin="981,305,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnUdate" Click="btnUdate_Click" Content="Update" HorizontalAlignment="Left" Margin="981,180,0,0" VerticalAlignment="Top" Width="84"/>
+        <ComboBox x:Name="lsSearch" HorizontalAlignment="Left" Height="34" Margin="965,377,0,0" VerticalAlignment="Top" Width="100" />
+        <DataGrid x:Name="dgRecords" HorizontalAlignment="Left" Margin="411,413,0,0" VerticalAlignment="Top" Width="285" Height="140"/>
+
+    </Grid>
+</UserControl>

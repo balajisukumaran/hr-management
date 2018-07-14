@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="HR_PresentationLayer.HRClerkLoginControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HR_PresentationLayer"
+             mc:Ignorable="d" 
+              d:DesignHeight="659.5" d:DesignWidth="1296" Background="White" Foreground="Black">
+    <Grid>
+        <Label x:Name="label" Content="Username" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="551,206,0,0"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="551,298,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Height="35" Margin="683,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Height="41" Margin="683,283,0,0" Password="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLogin" Click="btnLogin_Click" Content="Login" HorizontalAlignment="Left" Margin="728,378,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</UserControl>

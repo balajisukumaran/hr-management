@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="HR_PresentationLayer.SkillsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HR_PresentationLayer"
+             mc:Ignorable="d" 
+              d:DesignHeight="659.5" d:DesignWidth="1296" Loaded="UserControl_Loaded" Background="White" Foreground="Black">
+    <Grid>
+        <Label x:Name="label" Content="Skill ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="318,77,0,0"/>
+        <Label x:Name="label1" Content="Skill Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="318,153,0,0"/>
+        <Label x:Name="label2" Content="Skill Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="318,224,0,0"/>
+        <Label x:Name="label3" Content="Category" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="318,311,0,0"/>
+        <TextBox x:Name="txtSkillName" HorizontalAlignment="Left" Height="39" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="450,140,0,0"/>
+        <TextBox x:Name="txtSkillDescription" HorizontalAlignment="Left" Height="42" Margin="450,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txtSkillId" HorizontalAlignment="Left" Margin="450,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbCategory" HorizontalAlignment="Left" Margin="450,303,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUpdate" Content="Update" Click="btnUpdate_Click" HorizontalAlignment="Left" Margin="955,140,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click" HorizontalAlignment="Left" Margin="955,269,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="btnDelete" Content="Delete" Click="btnDelete_Click" HorizontalAlignment="Left" Margin="955,208,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button x:Name="btnAdd" Content="Insert" Click="btnAdd_Click" HorizontalAlignment="Left" Margin="955,79,0,0" VerticalAlignment="Top" Width="82"/>
+        <ComboBox x:Name="lsSearch" HorizontalAlignment="Left" Height="34" Margin="937,342,0,0" VerticalAlignment="Top" Width="100" />
+        <DataGrid x:Name="dgRecords" HorizontalAlignment="Left" Margin="315,411,0,0" VerticalAlignment="Top" Width="423" Height="166" SelectionChanged="dgRecords_SelectionChanged"/>
+
+
+    </Grid>
+</UserControl>

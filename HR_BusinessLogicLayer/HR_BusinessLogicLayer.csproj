@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C666409-0AE1-4F77-A6B6-7F25BC46F769}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HR_BusinessLogicLayer</RootNamespace>
+    <AssemblyName>HR_BusinessLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HRCapgeminiDetailsBusinessLogicLayer.cs" />
+    <Compile Include="HRCategoryBusinessLogicLayer.cs" />
+    <Compile Include="HRCivilStatusBusinessLogicLayer.cs" />
+    <Compile Include="HRCredentialsBusinessLogicLayer.cs" />
+    <Compile Include="HREmployeeBusinessLogicLayer.cs" />
+    <Compile Include="HRLevelBusinessLogicLayer.cs" />
+    <Compile Include="HRProjectBusinessLogicLayer.cs" />
+    <Compile Include="HRRolesBusinessLogicLayer.cs" />
+    <Compile Include="HRSkillBusinessLogicLayer.cs" />
+    <Compile Include="HRSpecialityBusinessLogicLayer.cs" />
+    <Compile Include="HRUserRolesBusinessLogicLayer.cs" />
+    <Compile Include="HRUsersBusinessLogicLayer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HR_DataAccessLayer\HR_DataAccessLayer.csproj">
+      <Project>{144d37d3-1e49-47a5-aeb7-9b8207e3baa2}</Project>
+      <Name>HR_DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HR_Entities\HR_Entities.csproj">
+      <Project>{96485ece-ac83-4a4c-9cf7-7d3f2bf2b18e}</Project>
+      <Name>HR_Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HR_Exception\HR_Exception.csproj">
+      <Project>{68237d33-c20a-43f7-8655-275fe1ec8652}</Project>
+      <Name>HR_Exception</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

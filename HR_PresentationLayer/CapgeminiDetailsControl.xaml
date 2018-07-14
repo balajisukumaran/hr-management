@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="HR_PresentationLayer.HomeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HR_PresentationLayer"
+             mc:Ignorable="d" 
+              d:DesignHeight="659.5" d:DesignWidth="1296" Background="White" Foreground="Black" Loaded="UserControl_Loaded">
+    <Grid>
+        <Label x:Name="label" Content="Employee Id" HorizontalAlignment="Left" Margin="289,79,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Email" HorizontalAlignment="Left" Margin="289,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" HorizontalAlignment="Left" Margin="289,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Date Hired" HorizontalAlignment="Left" Margin="289,213,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Speciality" HorizontalAlignment="Left" Margin="289,259,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Status" HorizontalAlignment="Left" Margin="289,303,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnInsert" Click="btnInsert_Click" Content="Insert" HorizontalAlignment="Left" Margin="1012,83,0,0" VerticalAlignment="Top" Width="93"/>
+        <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Search" HorizontalAlignment="Left" Margin="1012,288,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.495,1.031"/>
+        <Button x:Name="btnUpdate" Click="btnUpdate_Click" Content="Update" HorizontalAlignment="Left" Margin="1012,152,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="label6" Content="Level" HorizontalAlignment="Left" Margin="289,165,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="37" Margin="486,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" TextChanged="txtEmail_TextChanged"/>
+        <ComboBox x:Name="cbLevel" HorizontalAlignment="Left" Margin="486,163,0,0" VerticalAlignment="Top" Width="127"/>
+        <DatePicker Text="" HorizontalAlignment="Left" Name="dpDateHired" Width="127" Margin="486,213,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbSpeciality" HorizontalAlignment="Left" Margin="486,254,0,0" VerticalAlignment="Top" Width="127"/>
+        <ComboBox x:Name="cbStatus" HorizontalAlignment="Left" Margin="486,303,0,0" VerticalAlignment="Top" Width="127"/>
+        <Button x:Name="btnDelete" Click="btnDelete_Click" Content="Delete" HorizontalAlignment="Left" Margin="1012,221,0,0" VerticalAlignment="Top" Width="93"/>
+        <ComboBox x:Name="lsSearch" HorizontalAlignment="Left" Height="34" Margin="1005,352,0,0" VerticalAlignment="Top" Width="100" />
+        <ComboBox x:Name="cbEmployeeId" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Margin="486,77,0,0"/>
+        <DataGrid x:Name="dgRecords" HorizontalAlignment="Left" Margin="289,392,0,0" VerticalAlignment="Top" Height="209" Width="644"/>
+
+    </Grid>
+</UserControl>
