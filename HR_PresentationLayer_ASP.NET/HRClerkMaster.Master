@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HRClerkMaster.master.cs" Inherits="HR_PresentationLayer_ASP.NET.HRClerkMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons"/>
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"/>
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+
+               
+     <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">HRClerk Controls</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li> 
+          <asp:HyperLink ID="btnLogOut" runat="server" Text="Logout" NavigateUrl="~/Main.aspx" ></asp:HyperLink>
+
+      </li>
+      </ul>
+    </div>
+  </nav>
+        <div>
+  <ul id="slide-out" class="side-nav fixed">
+      <li class="bold"><a href="#!" class="">Manage Employee</a></li>
+      <li class="bold"><a href="#!" class="">Manage Project</a></li>
+       <li class="bold"><a href="#!" class="">Manage Skill</a></li>
+       <li class="bold"><a href="#!" class=""> Manage category</a></li>
+
+    </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+
+        <asp:ContentPlaceHolder ID="cphBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

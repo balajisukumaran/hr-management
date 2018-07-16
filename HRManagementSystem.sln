@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Exception", "HR_Exceptio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_DataAccessLayer", "HR_DataAccessLayer\HR_DataAccessLayer.csproj", "{144D37D3-1E49-47A5-AEB7-9B8207E3BAA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_PresentationLayer_ASP.NET", "HR_PresentationLayer_ASP.NET\HR_PresentationLayer_ASP.NET.csproj", "{389ED12A-35C4-4BFE-B62F-0B0C131FC1A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{144D37D3-1E49-47A5-AEB7-9B8207E3BAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{144D37D3-1E49-47A5-AEB7-9B8207E3BAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{144D37D3-1E49-47A5-AEB7-9B8207E3BAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389ED12A-35C4-4BFE-B62F-0B0C131FC1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389ED12A-35C4-4BFE-B62F-0B0C131FC1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389ED12A-35C4-4BFE-B62F-0B0C131FC1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389ED12A-35C4-4BFE-B62F-0B0C131FC1A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
