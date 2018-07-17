@@ -20,7 +20,7 @@
     <div>
         
      <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper indigo darken-4">
       <a href="#" class="brand-logo center">Admin Controls</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li> 
@@ -35,9 +35,9 @@
       <li class="bold"><a href="#!" class="">Manage Users</a></li>
       <li class="bold"><a href="#!" class="">Manage Roles</a></li>
        <li class="bold"><a href="#!" class="">Assign Roles</a></li>
-       <li class="bold"><a href="#!" class=""> Civil Status</a></li>
-       <li class="bold"><a href="#!" class=""> Level</a></li>
-       <li class="bold"><a href="#!" class=""> Speciality</a></li>
+       <li class="bold"><a href="#!" class="">Manage CivilStatus</a></li>
+       <li class="bold"><a href="#!" class="">Manage Level</a></li>
+       <li class="bold"><a href="#!" class="">Manage Speciality</a></li>
     </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>

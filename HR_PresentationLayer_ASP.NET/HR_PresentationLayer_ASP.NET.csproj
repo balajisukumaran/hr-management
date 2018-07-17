@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AssignRoles.aspx" />
     <Content Include="EmployeeControl.aspx" />
     <Content Include="HRClerkLogin.aspx" />
     <Content Include="packages.config" />
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRoles.aspx.cs">
+      <DependentUpon>AssignRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignRoles.aspx.designer.cs">
+      <DependentUpon>AssignRoles.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmployeeControl.aspx.cs">
       <DependentUpon>EmployeeControl.aspx</DependentUpon>

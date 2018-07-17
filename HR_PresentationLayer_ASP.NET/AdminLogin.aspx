@@ -18,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
               <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper indigo darken-4">
       <a href="#" class="brand-logo  ">Stark Industries</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
        
@@ -43,7 +43,7 @@
                 <td>
                     <div class="row" >
             <div class="col s6 offset-s3">
-                <div class="card blue-grey darken-1">
+                <div class="card indigo darken-4">
         <div class="card-content white-text">
           <span class="card-title">Admin Login</span>
             <br />
