@@ -52,10 +52,10 @@
         </div>
                 </td>
                 <td>
-                           <asp:ContentPlaceHolder ID="cphBody" runat="server">
-        
-        </asp:ContentPlaceHolder>
 
+<asp:ContentPlaceHolder ID="cphBody" runat="server">
+
+        </asp:ContentPlaceHolder>
                 </td>
             </tr>
         </table>

@@ -62,20 +62,18 @@
           <td colspan="3">
               <table>
                   <tr>
-                   <td>   &nbsp;<asp:Button ID="btnDelete" CssClass="waves-effect waves-light btn" Text="Delete" runat="server" /> 
+                   <td>   &nbsp;<asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" />  
+                       
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                      <asp:Button ID="btnSearch"  Text="Search" CssClass="waves-effect waves-light btn" runat="server" /> 
+                       <asp:Button ID="btnDelete" CssClass="waves-effect waves-light btn" Text="Delete" runat="server" /> 
+                     
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                         <asp:Button ID="btnUpdate" CssClass="waves-effect waves-light btn" Text="Update" runat="server" style="left: 3px; top: 0px" />
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" />  
+                        <asp:Button ID="btnSearch"  Text="Search" CssClass="waves-effect waves-light btn" runat="server" /> 
+                       
                   </td>
                        </tr>
-                  <tr>
-                      <td>
-                            <asp:DataGrid ID="dgRecords" runat="server"></asp:DataGrid>
-                      </td>
-                  </tr>
               </table>
           </td>
         </tr>
