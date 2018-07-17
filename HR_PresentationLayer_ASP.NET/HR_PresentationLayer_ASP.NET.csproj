@@ -67,8 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AssignRoles.aspx" />
+    <Content Include="CapgeminiDetailsControl.aspx" />
+    <Content Include="CategoriesControl.aspx" />
+    <Content Include="CivilStatusControl.aspx" />
     <Content Include="EmployeeControl.aspx" />
     <Content Include="HRClerkLogin.aspx" />
+    <Content Include="LevelControl.aspx" />
     <Content Include="packages.config" />
     <Content Include="AdminMaster.Master" />
     <Content Include="HRClerkMaster.Master" />
@@ -82,6 +86,10 @@
   <ItemGroup>
     <Content Include="AdminLogin.aspx" />
     <Content Include="Main.aspx" />
+    <Content Include="ProjectControl.aspx" />
+    <Content Include="RolesControl.aspx" />
+    <Content Include="SkillsControl.aspx" />
+    <Content Include="SpecialityControl.aspx" />
     <Content Include="UsersControl.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -107,6 +115,27 @@
     <Compile Include="AssignRoles.aspx.designer.cs">
       <DependentUpon>AssignRoles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CapgeminiDetailsControl.aspx.cs">
+      <DependentUpon>CapgeminiDetailsControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapgeminiDetailsControl.aspx.designer.cs">
+      <DependentUpon>CapgeminiDetailsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriesControl.aspx.cs">
+      <DependentUpon>CategoriesControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoriesControl.aspx.designer.cs">
+      <DependentUpon>CategoriesControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CivilStatusControl.aspx.cs">
+      <DependentUpon>CivilStatusControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CivilStatusControl.aspx.designer.cs">
+      <DependentUpon>CivilStatusControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeControl.aspx.cs">
       <DependentUpon>EmployeeControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +157,13 @@
     <Compile Include="HRClerkMaster.Master.designer.cs">
       <DependentUpon>HRClerkMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="LevelControl.aspx.cs">
+      <DependentUpon>LevelControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelControl.aspx.designer.cs">
+      <DependentUpon>LevelControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,7 +171,35 @@
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProjectControl.aspx.cs">
+      <DependentUpon>ProjectControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectControl.aspx.designer.cs">
+      <DependentUpon>ProjectControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesControl.aspx.cs">
+      <DependentUpon>RolesControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesControl.aspx.designer.cs">
+      <DependentUpon>RolesControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsControl.aspx.cs">
+      <DependentUpon>SkillsControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillsControl.aspx.designer.cs">
+      <DependentUpon>SkillsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialityControl.aspx.cs">
+      <DependentUpon>SpecialityControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpecialityControl.aspx.designer.cs">
+      <DependentUpon>SpecialityControl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UsersControl.aspx.cs">
       <DependentUpon>UsersControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

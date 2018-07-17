@@ -14,6 +14,11 @@
          src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       </script> 
+        <style type="text/css">
+        .auto-style1 {
+            width: 219px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -32,20 +37,32 @@
       </ul>
     </div>
   </nav>
-        <div>
+        <table style="width:100%; height:auto">
+            <tr>
+                <td class="auto-style1">
+                    <div>
   <ul id="slide-out" class="side-nav fixed">
-      <li class="bold"><a href="#!" class="">Manage Employee</a></li>
-      <li class="bold"><a href="#!" class="">Manage Project</a></li>
-       <li class="bold"><a href="#!" class="">Manage Skill</a></li>
-       <li class="bold"><a href="#!" class=""> Manage category</a></li>
+      <li class="bold"><asp:HyperLink ID="btnEmployee" runat="server" Text="Manage Employee" NavigateUrl="~/EmployeeControl.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnProject" runat="server" Text="Manage Project" NavigateUrl="~/ProjectControl.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnSkill" runat="server" Text="Manage Skills" NavigateUrl="~/SkillsControl.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnCategory" runat="server" Text="Manage Category" NavigateUrl="~/CategoriesControl.aspx" ></asp:HyperLink></li>
 
     </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
-
-        <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                </td>
+                <td>
+                           <asp:ContentPlaceHolder ID="cphBody" runat="server">
         
         </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+        </table>
+
+        
+
+ 
     </div>
     </form>
 </body>

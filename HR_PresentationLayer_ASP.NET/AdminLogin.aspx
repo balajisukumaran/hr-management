@@ -59,7 +59,7 @@
         </div>
         <div class="card-action">
           
-              <asp:HyperLink ID="hrlUsers" runat="server" Text="Login" NavigateUrl="~/UsersControl.aspx" ></asp:HyperLink>
+              <asp:HyperLink ID="hrlUsers" runat="server" Text="Login" NavigateUrl="~/CapgeminiDetailsControl.aspx" ></asp:HyperLink>
          
         </div>
       </div>
