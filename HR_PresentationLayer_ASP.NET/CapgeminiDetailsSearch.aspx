@@ -29,20 +29,18 @@
 <body>
        <form id="form1" runat="server">
           <center><div style="width:80%">
- <asp:GridView ID="gvCapgeminiDetails" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
-     <Columns>
-         <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" SortExpression="EmployeeID" />
-         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-         <asp:BoundField DataField="LevelId" HeaderText="LevelId" SortExpression="LevelId" />
-         <asp:BoundField DataField="DateHired" HeaderText="DateHired" SortExpression="DateHired" />
-         <asp:BoundField DataField="SpecialityId" HeaderText="SpecialityId" SortExpression="SpecialityId" />
-         <asp:BoundField DataField="StatusId" HeaderText="StatusId" SortExpression="StatusId" />
-     </Columns>
-
- </asp:GridView>
-    
-              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myConnection %>" SelectCommand="SELECT EmployeeID, Email, LevelId, DateHired, SpecialityId, StatusId FROM balaji.CapgeminiDetails_HR_Batch4"></asp:SqlDataSource>
-    
+ 
+    <asp:GridView ID="gvCapgeminiDetails" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+        <Columns>
+            <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" SortExpression="EmployeeID" />
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            <asp:BoundField DataField="LevelId" HeaderText="LevelId" SortExpression="LevelId" />
+            <asp:BoundField DataField="DateHired" HeaderText="DateHired" SortExpression="DateHired" />
+            <asp:BoundField DataField="SpecialityId" HeaderText="SpecialityId" SortExpression="SpecialityId" />
+            <asp:BoundField DataField="StatusId" HeaderText="StatusId" SortExpression="StatusId" />
+        </Columns>
+              </asp:GridView>
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myConnection %>" SelectCommand="select * from balaji.CapgeminiDetails_HR_Batch4"></asp:SqlDataSource>
     </div>
     </center>
         </form>
