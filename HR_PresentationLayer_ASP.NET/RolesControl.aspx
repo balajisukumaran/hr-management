@@ -1,16 +1,13 @@
 ﻿
 <%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="RolesControl.aspx.cs" Inherits="HR_PresentationLayer_ASP.NET.RolesControl" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">
-        <table style="width:100%;height:auto">
-        <tr>
-            <td style="width:20%; height:auto">
-
-            </td>
-            
-            <td style="width:auto;height:auto">
-                <table style="width:100% ">
-
-            <tr>
+        
+       
+     <br />
+    <br />
+			<center>
+				<table style="width:auto ">
+		<tr>
             <td style="width: 173px">
                 <asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
             </td>
@@ -52,30 +49,25 @@
 
       
         </tr>
-        <tr>
-          <td colspan="3">
-              <table>
-                  <tr>
-                   <td style="width: 689px">   &nbsp;<asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 93px; top: 0px" />  
-                       
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                       <asp:Button ID="btnDelete" CssClass="waves-effect waves-light btn" Text="Delete" runat="server" style="left: 0px; top: 1px" /> 
-                     
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                        <asp:Button ID="btnUpdate" CssClass="waves-effect waves-light btn" Text="Update" runat="server" style="left: 3px; top: 0px" />
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       
-                            <asp:HyperLink ID="btnSearch" CssClass="waves-effect waves-light btn" runat="server" Text="Search" NavigateUrl="~/RolesSearch.aspx" ></asp:HyperLink>
-                    
+        
 
-                  </td>
-                       </tr>
-                  </table>
-          </td>
-        </tr>
-    </table>
-            </td>
-        </tr>
+                        <tr>
+							<td style="width: 173px">
+								
+							</td>
+							<td style="width: 248px">  
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" />  
+							</td>
+							<td>
+								
+							</td>
+						</tr>
 
-    </table>
+    
+                 </table>
+			</center>
+		
+   
+    
 </asp:Content>

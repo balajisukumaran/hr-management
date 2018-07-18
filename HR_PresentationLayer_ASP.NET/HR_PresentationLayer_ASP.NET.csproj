@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AssignRoles.aspx" />
-    <Content Include="AssignRolesSearch.aspx" />
     <Content Include="CapgeminiDetailsControl.aspx" />
     <Content Include="CapgeminiDetailsSearch.aspx" />
     <Content Include="CategoriesControl.aspx" />
@@ -82,6 +82,8 @@
     <Content Include="packages.config" />
     <Content Include="AdminMaster.Master" />
     <Content Include="HRClerkMaster.Master" />
+    <Content Include="UsersSearch.aspx" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -101,7 +103,6 @@
     <Content Include="SpecialityControl.aspx" />
     <Content Include="SpecialitySearch.aspx" />
     <Content Include="UsersControl.aspx" />
-    <Content Include="UsersSearch.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -125,13 +126,6 @@
     </Compile>
     <Compile Include="AssignRoles.aspx.designer.cs">
       <DependentUpon>AssignRoles.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AssignRolesSearch.aspx.cs">
-      <DependentUpon>AssignRolesSearch.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AssignRolesSearch.aspx.designer.cs">
-      <DependentUpon>AssignRolesSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapgeminiDetailsControl.aspx.cs">
       <DependentUpon>CapgeminiDetailsControl.aspx</DependentUpon>
@@ -294,6 +288,13 @@
     </Compile>
     <Compile Include="UsersSearch.aspx.designer.cs">
       <DependentUpon>UsersSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

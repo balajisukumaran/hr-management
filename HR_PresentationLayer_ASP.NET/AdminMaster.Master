@@ -5,21 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>      
+       <meta name = "viewport" content = "width = device-width, initial-scale = 1"/>      
       <link rel = "stylesheet"
          href = "https://fonts.googleapis.com/icon?family=Material+Icons"/>
       <link rel = "stylesheet"
          href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css"/>
       <script type = "text/javascript"
-         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>    
+        
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       </script> 
-    <style type="text/css">
-        .auto-style1 {
-            width: 219px;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+
+    </head>
 <body>
     <form id="form1" runat="server">
     <div>
@@ -43,9 +45,9 @@
         <ul id="slide-out" class="side-nav fixed">
       
       <li class="bold"><asp:HyperLink ID="btnCapgeminiDetails" runat="server" Text="Capgemini Details" NavigateUrl="~/CapgeminiDetailsControl.aspx" ></asp:HyperLink></li>
-      <li class="bold"><asp:HyperLink ID="btnUsers" runat="server" Text="Manage Users" NavigateUrl="~/UsersControl.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnUsers" runat="server" Text="Manage Users" NavigateUrl="~/UsersSearch.aspx" ></asp:HyperLink></li>
       <li class="bold"><asp:HyperLink ID="btnRoles" runat="server" Text="Manage Roles" NavigateUrl="~/RolesControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnAssignRoles" runat="server" Text="Assign Roles" NavigateUrl="~/AssignRoles.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnAssignRoles" runat="server" Text="Assign Roles" NavigateUrl="~/WebForm1.aspx" ></asp:HyperLink></li>
        <li class="bold"><asp:HyperLink ID="btnCivilStatus" runat="server" Text="Manage CivilStatus" NavigateUrl="~/CivilStatusControl.aspx" ></asp:HyperLink></li>
        <li class="bold"><asp:HyperLink ID="btnLevel" runat="server" Text="Manage Level" NavigateUrl="~/LevelControl.aspx" ></asp:HyperLink></li>
        <li class="bold"><asp:HyperLink ID="btnSpeciality" runat="server" Text="Manage Speciality" NavigateUrl="~/SpecialityControl.aspx" ></asp:HyperLink></li>
