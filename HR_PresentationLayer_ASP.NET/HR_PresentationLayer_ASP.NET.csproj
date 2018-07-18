@@ -69,6 +69,7 @@
     <Content Include="AssignRoles.aspx" />
     <Content Include="CapgeminiDetailsControl.aspx" />
     <Content Include="CategoriesControl.aspx" />
+    <Content Include="CategorySearch.aspx" />
     <Content Include="CivilStatusControl.aspx" />
     <Content Include="EmployeeControl.aspx" />
     <Content Include="HRClerkLogin.aspx" />
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="CategoriesControl.aspx.designer.cs">
       <DependentUpon>CategoriesControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategorySearch.aspx.cs">
+      <DependentUpon>CategorySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategorySearch.aspx.designer.cs">
+      <DependentUpon>CategorySearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="CivilStatusControl.aspx.cs">
       <DependentUpon>CivilStatusControl.aspx</DependentUpon>
@@ -207,6 +215,12 @@
     <Compile Include="UsersControl.aspx.designer.cs">
       <DependentUpon>UsersControl.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HR_Entities\HR_Entities.csproj">
+      <Project>{96485ece-ac83-4a4c-9cf7-7d3f2bf2b18e}</Project>
+      <Name>HR_Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

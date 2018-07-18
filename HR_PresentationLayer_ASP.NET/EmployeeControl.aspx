@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">
        <center>
         <h1>
-            Employee
+            
         </h1>
 
     </center>
