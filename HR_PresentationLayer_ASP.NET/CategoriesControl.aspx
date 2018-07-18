@@ -13,7 +13,7 @@
             <td style="width: 173px">
                 <asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
             </td>
-            <td style="width: 248px">
+            <td style="width: 238px">
                  <asp:DropDownList CssClass="browser-default" runat="server" Width="244px"></asp:DropDownList>           
             </td>
             <td>
@@ -25,7 +25,7 @@
             <td style="width: 173px">
                 <asp:Label ID="lblCatId" runat="server" Text="Category ID"></asp:Label>
             </td>
-            <td style="width: 248px">
+            <td style="width: 238px">
                 <asp:TextBox ID="txtCatId" runat="server"></asp:TextBox>                
             </td>
             <td>
@@ -39,7 +39,7 @@
                 <asp:Label ID="lblCatName" runat="server" Text="Category Name"></asp:Label>
             </td>
             
-            <td style="width: 248px">
+            <td style="width: 238px">
                 <asp:TextBox ID="txtCatName" runat="server" ></asp:TextBox>
                 
             </td>
@@ -57,7 +57,7 @@
                 <asp:Label ID="lblCatDesc" runat="server" Text="Category Description"></asp:Label>
             </td>
             
-            <td style="width: 248px">
+            <td style="width: 238px">
                 <asp:TextBox ID="txtCatDesc" runat="server"></asp:TextBox>
                
             </td>
@@ -72,9 +72,9 @@
           <td colspan="3">
               <table>
                   <tr>
-                   <td style="width: 689px">   &nbsp;<asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" />  
+                   <td style="width: 689px">   &nbsp;<asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" />  
                        
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                        <asp:Button ID="btnDelete" CssClass="waves-effect waves-light btn" Text="Delete" runat="server" style="left: 0px; top: 1px" /> 
                      
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

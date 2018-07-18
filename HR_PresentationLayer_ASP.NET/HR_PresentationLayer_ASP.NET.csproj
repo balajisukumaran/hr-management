@@ -67,13 +67,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AssignRoles.aspx" />
+    <Content Include="AssignRolesSearch.aspx" />
     <Content Include="CapgeminiDetailsControl.aspx" />
+    <Content Include="CapgeminiDetailsSearch.aspx" />
     <Content Include="CategoriesControl.aspx" />
     <Content Include="CategorySearch.aspx" />
     <Content Include="CivilStatusControl.aspx" />
+    <Content Include="CivilStatusSearch.aspx" />
     <Content Include="EmployeeControl.aspx" />
+    <Content Include="EmployeeSearch.aspx" />
     <Content Include="HRClerkLogin.aspx" />
     <Content Include="LevelControl.aspx" />
+    <Content Include="LevelSearch.aspx" />
     <Content Include="packages.config" />
     <Content Include="AdminMaster.Master" />
     <Content Include="HRClerkMaster.Master" />
@@ -88,10 +93,15 @@
     <Content Include="AdminLogin.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="ProjectControl.aspx" />
+    <Content Include="ProjectSearch.aspx" />
     <Content Include="RolesControl.aspx" />
+    <Content Include="RolesSearch.aspx" />
     <Content Include="SkillsControl.aspx" />
+    <Content Include="SkillsSearch.aspx" />
     <Content Include="SpecialityControl.aspx" />
+    <Content Include="SpecialitySearch.aspx" />
     <Content Include="UsersControl.aspx" />
+    <Content Include="UsersSearch.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -116,12 +126,26 @@
     <Compile Include="AssignRoles.aspx.designer.cs">
       <DependentUpon>AssignRoles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AssignRolesSearch.aspx.cs">
+      <DependentUpon>AssignRolesSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignRolesSearch.aspx.designer.cs">
+      <DependentUpon>AssignRolesSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CapgeminiDetailsControl.aspx.cs">
       <DependentUpon>CapgeminiDetailsControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CapgeminiDetailsControl.aspx.designer.cs">
       <DependentUpon>CapgeminiDetailsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapgeminiDetailsSearch.aspx.cs">
+      <DependentUpon>CapgeminiDetailsSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapgeminiDetailsSearch.aspx.designer.cs">
+      <DependentUpon>CapgeminiDetailsSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="CategoriesControl.aspx.cs">
       <DependentUpon>CategoriesControl.aspx</DependentUpon>
@@ -144,12 +168,26 @@
     <Compile Include="CivilStatusControl.aspx.designer.cs">
       <DependentUpon>CivilStatusControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CivilStatusSearch.aspx.cs">
+      <DependentUpon>CivilStatusSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CivilStatusSearch.aspx.designer.cs">
+      <DependentUpon>CivilStatusSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeControl.aspx.cs">
       <DependentUpon>EmployeeControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EmployeeControl.aspx.designer.cs">
       <DependentUpon>EmployeeControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSearch.aspx.cs">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeSearch.aspx.designer.cs">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="HRClerkLogin.aspx.cs">
       <DependentUpon>HRClerkLogin.aspx</DependentUpon>
@@ -172,6 +210,13 @@
     <Compile Include="LevelControl.aspx.designer.cs">
       <DependentUpon>LevelControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LevelSearch.aspx.cs">
+      <DependentUpon>LevelSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LevelSearch.aspx.designer.cs">
+      <DependentUpon>LevelSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +231,13 @@
     <Compile Include="ProjectControl.aspx.designer.cs">
       <DependentUpon>ProjectControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProjectSearch.aspx.cs">
+      <DependentUpon>ProjectSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectSearch.aspx.designer.cs">
+      <DependentUpon>ProjectSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RolesControl.aspx.cs">
       <DependentUpon>RolesControl.aspx</DependentUpon>
@@ -194,12 +246,26 @@
     <Compile Include="RolesControl.aspx.designer.cs">
       <DependentUpon>RolesControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RolesSearch.aspx.cs">
+      <DependentUpon>RolesSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RolesSearch.aspx.designer.cs">
+      <DependentUpon>RolesSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SkillsControl.aspx.cs">
       <DependentUpon>SkillsControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SkillsControl.aspx.designer.cs">
       <DependentUpon>SkillsControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsSearch.aspx.cs">
+      <DependentUpon>SkillsSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillsSearch.aspx.designer.cs">
+      <DependentUpon>SkillsSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="SpecialityControl.aspx.cs">
       <DependentUpon>SpecialityControl.aspx</DependentUpon>
@@ -208,12 +274,26 @@
     <Compile Include="SpecialityControl.aspx.designer.cs">
       <DependentUpon>SpecialityControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SpecialitySearch.aspx.cs">
+      <DependentUpon>SpecialitySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpecialitySearch.aspx.designer.cs">
+      <DependentUpon>SpecialitySearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UsersControl.aspx.cs">
       <DependentUpon>UsersControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UsersControl.aspx.designer.cs">
       <DependentUpon>UsersControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersSearch.aspx.cs">
+      <DependentUpon>UsersSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersSearch.aspx.designer.cs">
+      <DependentUpon>UsersSearch.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
