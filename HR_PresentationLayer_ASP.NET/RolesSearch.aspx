@@ -21,7 +21,7 @@
 
     <script>
         $(function () {
-            $("#gvCategory").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            $("#gvRoles").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
         });
     </script>
 
@@ -29,9 +29,16 @@
 <body>
       <form id="form1" runat="server">
           <center><div style="width:80%">
- <asp:GridView ID="gvAssignRoles" runat="server">
+ <asp:GridView ID="gvRoles" runat="server" AutoGenerateColumns="False" DataKeyNames="RoleId" DataSourceID="SqlDataSource2">
+     <Columns>
+         <asp:BoundField DataField="RoleId" HeaderText="RoleId" InsertVisible="False" ReadOnly="True" SortExpression="RoleId" />
+         <asp:BoundField DataField="RoleName" HeaderText="RoleName" SortExpression="RoleName" />
+     </Columns>
 
  </asp:GridView>
+    
+              <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:myConnection %>" SelectCommand="select * from balaji.Roles_HR_Batch4"></asp:SqlDataSource>
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
     
     </div>
     </center>

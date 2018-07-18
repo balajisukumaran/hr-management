@@ -21,7 +21,7 @@
 
     <script>
         $(function () {
-            $("#gvCategory").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            $("#gvProject").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
         });
     </script>
 
@@ -29,9 +29,19 @@
 <body>
         <form id="form1" runat="server">
           <center><div style="width:80%">
- <asp:GridView ID="gvAssignRoles" runat="server">
+ <asp:GridView ID="gvProject" runat="server" AutoGenerateColumns="False" DataKeyNames="ProjectID" DataSourceID="SqlDataSource1">
+     <Columns>
+         <asp:BoundField DataField="ProjectID" HeaderText="ProjectID" InsertVisible="False" ReadOnly="True" SortExpression="ProjectID" />
+         <asp:BoundField DataField="ProjectName" HeaderText="ProjectName" SortExpression="ProjectName" />
+         <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+         <asp:BoundField DataField="Client" HeaderText="Client" SortExpression="Client" />
+         <asp:BoundField DataField="StartDate" HeaderText="StartDate" SortExpression="StartDate" />
+         <asp:BoundField DataField="EndDate" HeaderText="EndDate" SortExpression="EndDate" />
+     </Columns>
 
  </asp:GridView>
+    
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:myConnection %>" SelectCommand="select * from balaji.Project_HR_Batch4"></asp:SqlDataSource>
     
     </div>
     </center>
