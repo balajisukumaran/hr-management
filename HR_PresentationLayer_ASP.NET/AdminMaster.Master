@@ -23,7 +23,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <nav>
+  <nav>
     <div class="nav-wrapper indigo darken-4">
       <a href="#" class="brand-logo center">Admin Controls</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -40,7 +40,7 @@
                 
                 <td class="auto-style1">
                     <div>
-  <ul id="slide-out" class="side-nav fixed">
+        <ul id="slide-out" class="side-nav fixed">
       
       <li class="bold"><asp:HyperLink ID="btnCapgeminiDetails" runat="server" Text="Capgemini Details" NavigateUrl="~/CapgeminiDetailsControl.aspx" ></asp:HyperLink></li>
       <li class="bold"><asp:HyperLink ID="btnUsers" runat="server" Text="Manage Users" NavigateUrl="~/UsersControl.aspx" ></asp:HyperLink></li>
@@ -53,19 +53,17 @@
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
                 </td>
-                <td><asp:ContentPlaceHolder ID="cphBody" runat="server">
+                <td>
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
         
-        </asp:ContentPlaceHolder></td>
+        </asp:ContentPlaceHolder>
+
+                </td>
                 
                 
             </tr>
             
         </table>
-
-        
-
-
-        
     </div>
     </form>
 </body>

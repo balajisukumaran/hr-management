@@ -9,7 +9,7 @@
             <td style="width:auto;height:auto">
                 <table style="width:100% ">
 
- <tr>
+            <tr>
             <td style="width: 173px">
                 <asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
             </td>
@@ -17,7 +17,7 @@
                  <asp:DropDownList CssClass="browser-default" runat="server" Width="244px"></asp:DropDownList>           
             </td>
             <td>
-<%--                <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
+            <%--                <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
             --%></td>
       
         </tr>
