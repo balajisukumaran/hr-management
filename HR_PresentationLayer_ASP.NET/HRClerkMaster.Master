@@ -42,10 +42,10 @@
                 <td class="auto-style1">
                     <div>
   <ul id="slide-out" class="side-nav fixed">
-      <li class="bold"><asp:HyperLink ID="btnEmployee" runat="server" Text="Manage Employee" NavigateUrl="~/EmployeeControl.aspx" ></asp:HyperLink></li>
-      <li class="bold"><asp:HyperLink ID="btnProject" runat="server" Text="Manage Project" NavigateUrl="~/ProjectControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnSkill" runat="server" Text="Manage Skills" NavigateUrl="~/SkillsControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnCategory" runat="server" Text="Manage Category" NavigateUrl="~/CategoriesControl.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnEmployee" runat="server" Text="Manage Employee" NavigateUrl="~/EmployeeSearch.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnProject" runat="server" Text="Manage Project" NavigateUrl="~/Projectsearch.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnSkill" runat="server" Text="Manage Skills" NavigateUrl="~/SkillSearch.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnCategory" runat="server" Text="Manage Category" NavigateUrl="~/CategoriesSearch.aspx" ></asp:HyperLink></li>
 
     </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

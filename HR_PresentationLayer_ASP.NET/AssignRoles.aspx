@@ -44,11 +44,15 @@
                         <tr>
 							<td style="width: 173px">
 								
+						<asp:Button runat="server" CssClass="waves-effect waves-light btn" Text="Add New" ID="btnAdd" style="left: 0px; top: -11px"  />
+                              
+								
 							</td>
 							<td style="width: 248px">  
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <asp:Button ID="btnAssign" CssClass="waves-effect waves-light btn" Text="Assign" runat="server" style="left: 78px; top: 0px" />  
-							</td>
+                          <asp:HyperLink ID="btnList" runat="server" CssClass="waves-effect waves-light btn" Text="List Roles" NavigateUrl="~/AssignRolesSearch.aspx" ></asp:HyperLink>
+						  <br />
+                                <br />
+                                	</td>
 							<td>
 								
 							</td>

@@ -10,16 +10,16 @@
 namespace HR_PresentationLayer_ASP.NET {
     
     
-    public partial class SpecialitySearch {
+    public partial class CapgeminiDetailSearch {
         
         /// <summary>
-        /// ddSpecialityID control.
+        /// ddEmployeeID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddSpecialityID;
+        protected global::System.Web.UI.WebControls.DropDownList ddEmployeeID;
         
         /// <summary>
         /// SqlDataSource1 control.

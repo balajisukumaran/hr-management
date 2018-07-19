@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HR_PresentationLayer_ASP.NET
 {
-    public partial class ProjectSearch : System.Web.UI.Page
+    public partial class Projectsearch : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

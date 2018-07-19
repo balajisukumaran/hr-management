@@ -11,7 +11,7 @@ namespace HR_PresentationLayer_ASP.NET
 {
 
 
-    public partial class CivilStatusSearch
+    public partial class SkillSearch
     {
     }
 }

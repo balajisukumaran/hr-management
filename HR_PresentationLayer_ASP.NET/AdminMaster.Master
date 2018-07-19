@@ -21,6 +21,14 @@
 
 
 
+    <style type="text/css">
+        .auto-style1 {
+            width: 235px;
+        }
+    </style>
+
+
+
     </head>
 <body>
     <form id="form1" runat="server">
@@ -44,13 +52,14 @@
                     <div>
         <ul id="slide-out" class="side-nav fixed">
       
-      <li class="bold"><asp:HyperLink ID="btnCapgeminiDetails" runat="server" Text="Capgemini Details" NavigateUrl="~/CapgeminiDetailsControl.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnCapgeminiDetails" runat="server" Text="Capgemini Details" NavigateUrl="~/CapgeminiDetailSearch.aspx"
+           ></asp:HyperLink></li>
       <li class="bold"><asp:HyperLink ID="btnUsers" runat="server" Text="Manage Users" NavigateUrl="~/UsersSearch.aspx" ></asp:HyperLink></li>
-      <li class="bold"><asp:HyperLink ID="btnRoles" runat="server" Text="Manage Roles" NavigateUrl="~/RolesControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnAssignRoles" runat="server" Text="Assign Roles" NavigateUrl="~/WebForm1.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnCivilStatus" runat="server" Text="Manage CivilStatus" NavigateUrl="~/CivilStatusControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnLevel" runat="server" Text="Manage Level" NavigateUrl="~/LevelControl.aspx" ></asp:HyperLink></li>
-       <li class="bold"><asp:HyperLink ID="btnSpeciality" runat="server" Text="Manage Speciality" NavigateUrl="~/SpecialityControl.aspx" ></asp:HyperLink></li>
+      <li class="bold"><asp:HyperLink ID="btnRoles" runat="server" Text="Manage Roles" NavigateUrl="~/RolesSearch.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnAssignRoles" runat="server" Text="Assign Roles" NavigateUrl="~/AssignRoles.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnCivilStatus" runat="server" Text="Manage CivilStatus" NavigateUrl="~/CivilStatusSearch.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnLevel" runat="server" Text="Manage Level" NavigateUrl="~/LevelSearch.aspx" ></asp:HyperLink></li>
+       <li class="bold"><asp:HyperLink ID="btnSpeciality" runat="server" Text="Manage Speciality" NavigateUrl="~/SpecialitySearch.aspx" ></asp:HyperLink></li>
     </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
