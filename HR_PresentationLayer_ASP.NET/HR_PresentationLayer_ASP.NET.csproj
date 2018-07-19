@@ -298,9 +298,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HR_BusinessLogicLayer\HR_BusinessLogicLayer.csproj">
+      <Project>{0c666409-0ae1-4f77-a6b6-7f25bc46f769}</Project>
+      <Name>HR_BusinessLogicLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HR_Entities\HR_Entities.csproj">
       <Project>{96485ece-ac83-4a4c-9cf7-7d3f2bf2b18e}</Project>
       <Name>HR_Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HR_Exception\HR_Exception.csproj">
+      <Project>{68237d33-c20a-43f7-8655-275fe1ec8652}</Project>
+      <Name>HR_Exception</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

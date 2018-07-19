@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using HR_Entities;
+using HR_Exception;
+using HR_BusinessLogicLayer;
 namespace HR_PresentationLayer_ASP.NET
 {
     public partial class CivilStatusControl : System.Web.UI.Page

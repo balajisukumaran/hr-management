@@ -6,8 +6,14 @@
 
            </td>
            <td style="width:80%">
+              
                <br />
                <table>
+                   <tr>
+                       <td colspan="4">
+                           <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manage Capgemini Details</h3>
+                       </td>
+                   </tr>
                    <tr>
                        <td style="width: auto">
                            <asp:Label runat="server">Search Detail: </asp:Label> 

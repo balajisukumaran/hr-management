@@ -4,24 +4,14 @@
     <br />
 			<center>
 				<table style="width:auto ">
-					    <tr>
-							<td style="width: 173px">
-								<asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
-							</td>
-							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" ID="ddSelectById" runat="server" Width="244px"></asp:DropDownList>           
-							</td>
-							<td>
-								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-								--%>
-							</td>
-						</tr>
+					    
                       <tr>
 							<td style="width: 173px">
 								<asp:Label ID="lblEmployeeId" runat="server" Text="Employee ID"></asp:Label>
 							</td>
 							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" ID="ddEmployeeID" runat="server" Width="244px"></asp:DropDownList>           
+								<asp:DropDownList CssClass="browser-default" ID="ddEmployeeID" runat="server" Width="244px" DataSourceID="SqlDataSource1" DataTextField="EmployeeId" DataValueField="EmployeeId"></asp:DropDownList>           
+							    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select EmployeeId from balaji.CapgeminiDetails_HR_Batch4"></asp:SqlDataSource>
 							</td>
 							<td>
 								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -45,7 +35,8 @@
 								<asp:Label ID="lblLevel" runat="server" Text="Level"></asp:Label>
 							</td>
 							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" ID="ddlevel" runat="server" Width="244px"></asp:DropDownList>           
+								<asp:DropDownList CssClass="browser-default" ID="ddlevel" runat="server" Width="244px" DataSourceID="SqlDataSource2" DataTextField="LevelDescription" DataValueField="LevelId"></asp:DropDownList>           
+							    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select * from balaji.Level_HR_Batch4"></asp:SqlDataSource>
 							</td>
 							<td>
 								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -69,7 +60,21 @@
 								<asp:Label ID="lblSpeciality" runat="server" Text="Speciality"></asp:Label>
 							</td>
 							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" ID="ddSpeciality" runat="server" Width="244px"></asp:DropDownList>           
+								<asp:DropDownList CssClass="browser-default" ID="ddSpeciality" runat="server" Width="244px" DataSourceID="SqlDataSource3" DataTextField="SpecialityName" DataValueField="SpecialityID"></asp:DropDownList>           
+							    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select * from balaji.Speciality_HR_Batch4"></asp:SqlDataSource>
+							</td>
+							<td>
+								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
+								--%>
+							</td>
+						</tr>
+                    <tr>
+							<td style="width: 173px">
+								<asp:Label ID="lblStatus" runat="server" Text="Status Id"></asp:Label>
+							</td>
+							<td style="width: 248px">
+								<asp:DropDownList CssClass="browser-default" ID="DropDownList1" runat="server" Width="244px" DataSourceID="SqlDataSource4" DataTextField="StatusDescription" DataValueField="StatusId"></asp:DropDownList>           
+							    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select *  from balaji.CivilStatus_HR_Batch4"></asp:SqlDataSource>
 							</td>
 							<td>
 								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -82,7 +87,7 @@
 							</td>
 							<td style="width: 248px">  
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" />  
+                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" OnClick="btnInsert_Click"/>  
 							</td>
 							<td>
 								
