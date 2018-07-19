@@ -89,7 +89,7 @@
                     <td class="auto-style2">
                             <div class="card-action">
           
-              <asp:HyperLink ID="hrlUsers" runat="server" Text="Login" NavigateUrl="~/CapgeminiDetailsControl.aspx" ></asp:HyperLink>
+              <asp:HyperLink ID="hrlUsers" runat="server" Text="Login" NavigateUrl="~/EmployeeSearch.aspx" ></asp:HyperLink>
          
         </div>
                     </td>

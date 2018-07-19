@@ -11,7 +11,23 @@ namespace HR_PresentationLayer_ASP.NET
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Panel1.Visible = true;
+            Panel2.Visible = false;
+        }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            Panel1.Visible = true;
+            Panel2.Visible = false;
+            DropDownList1.DataSourceID = "SqlDataSource1";
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            Panel1.Visible = false;
+            Panel2.Visible = true;
         }
     }
 }
