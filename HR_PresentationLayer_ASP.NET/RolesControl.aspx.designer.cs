@@ -13,33 +13,6 @@ namespace HR_PresentationLayer_ASP.NET {
     public partial class RolesControl {
         
         /// <summary>
-        /// SelectByID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SelectByID;
-        
-        /// <summary>
-        /// lblRoleId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRoleId;
-        
-        /// <summary>
-        /// txtRoleId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRoleId;
-        
-        /// <summary>
         /// lblRoleName control.
         /// </summary>
         /// <remarks>
@@ -58,12 +31,12 @@ namespace HR_PresentationLayer_ASP.NET {
         protected global::System.Web.UI.WebControls.TextBox txtRoleName;
         
         /// <summary>
-        /// btnInsert control.
+        /// btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsert;
+        protected global::System.Web.UI.WebControls.Button btn;
     }
 }

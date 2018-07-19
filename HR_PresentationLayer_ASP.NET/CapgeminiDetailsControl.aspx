@@ -10,8 +10,8 @@
 								<asp:Label ID="lblEmployeeId" runat="server" Text="Employee ID"></asp:Label>
 							</td>
 							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" ID="ddEmployeeID" runat="server" Width="244px" DataSourceID="SqlDataSource1" DataTextField="EmployeeId" DataValueField="EmployeeId"></asp:DropDownList>           
-							    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select EmployeeId from balaji.CapgeminiDetails_HR_Batch4"></asp:SqlDataSource>
+								<asp:DropDownList CssClass="browser-default" ID="ddEmployeeID" runat="server" Width="244px" DataSourceID="SqlDataSource1" DataTextField="EmployeeID" DataValueField="EmployeeID"></asp:DropDownList>           
+							    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select * from balaji.Employee_HR_Batch4"></asp:SqlDataSource>
 							</td>
 							<td>
 								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -48,7 +48,8 @@
                                  <asp:Label ID="lblDateHired" runat="server" Text="Date Hired"></asp:Label>
                             </td>
                             <td style="width: 248px">
-                               <input type="date" id="dpDateHired" class="datepicker"/>       
+                                <asp:TextBox ID="dpDateHired" runat="server" TextMode="Date" CssClass="browser-default"></asp:TextBox>
+                              <%-- <input type="date" id="dpDateHired" class="datepicker"/>    --%>   
                             </td>
                             <td>
 <%--                              <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -70,7 +71,7 @@
 						</tr>
                     <tr>
 							<td style="width: 173px">
-								<asp:Label ID="lblStatus" runat="server" Text="Status Id"></asp:Label>
+								<asp:Label ID="lblStatus" runat="server" Text="Civil Status"></asp:Label>
 							</td>
 							<td style="width: 248px">
 								<asp:DropDownList CssClass="browser-default" ID="DropDownList1" runat="server" Width="244px" DataSourceID="SqlDataSource4" DataTextField="StatusDescription" DataValueField="StatusId"></asp:DropDownList>           
