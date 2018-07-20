@@ -17,9 +17,9 @@
                 
             </td>
             <td>
-              <%--  <asp:RequiredFieldValidator ID="rfvCatName" runat="server" Display="Dynamic" ErrorMessage="Enter Category Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatName" Text="Category Name is Required"></asp:RequiredFieldValidator>
-               --%>
-
+                <asp:RequiredFieldValidator ID="rfvCatName" runat="server" Display="Dynamic" ErrorMessage="Enter Category Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatName" Text="Category Name is Required"></asp:RequiredFieldValidator>
+          <asp:RegularExpressionValidator ID="regCatName" runat="server" ControlToValidate="txtCatName" ValidationExpression="[A-Za-z0-9]+" Text="Please provide Category Name" ErrorMessage="[ Category Name is Required]" ForeColor="Red" Display="Dynamic"></asp:RegularExpressionValidator>
+                             
             </td>
 
       
@@ -31,12 +31,13 @@
             </td>
             
             <td style="width: 238px">
-                <asp:TextBox ID="txtCatDesc" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtCatDesc" runat="server" TextMode="MultiLine"></asp:TextBox>
                
             </td>
             <td>
-            <%--    <asp:RequiredFieldValidator ID="rfvCatDesc" runat="server" Display="Dynamic" ErrorMessage="Enter Category Description" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatDesc" Text="Category Description is Required"></asp:RequiredFieldValidator>
-              --%> 
+                <asp:RequiredFieldValidator ID="rfvCatDesc" runat="server" Display="Dynamic" ErrorMessage="Enter Category Description" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatDesc" Text="Category Description is Required"></asp:RequiredFieldValidator>
+               <asp:RegularExpressionValidator ID="regCatDesc" runat="server" ControlToValidate="txtCatDesc" ValidationExpression="[A-Za-z0-9]+" Text="Please provide Category Description" ErrorMessage="[ Category Description is Required]" ForeColor="Red" Display="Dynamic"></asp:RegularExpressionValidator>
+                             
             </td>
  
         </tr>

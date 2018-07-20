@@ -31,6 +31,15 @@ namespace HR_PresentationLayer_ASP.NET {
         protected global::System.Web.UI.WebControls.TextBox txtLevelDes;
         
         /// <summary>
+        /// rfvLevelDes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLevelDes;
+        
+        /// <summary>
         /// btnIns control.
         /// </summary>
         /// <remarks>

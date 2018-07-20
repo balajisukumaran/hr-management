@@ -1,5 +1,4 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="LevelControl.aspx.cs" Inherits="HR_PresentationLayer_ASP.NET.LevelControl" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="LevelControl.aspx.cs" Inherits="HR_PresentationLayer_ASP.NET.LevelControl" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">
    
 
@@ -13,13 +12,14 @@
                         <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblLevDes" runat="server" Text="Level Description"></asp:Label>
+                                <asp:Label Text="*" ForeColor="Red" runat="server"></asp:Label>
                             </td>
                             <td style="width: 248px">
-                                  <asp:TextBox ID="txtLevelDes" runat="server"></asp:TextBox>                
+                                  <asp:TextBox ID="txtLevelDes" TextMode="MultiLine" Rows="5" Columns="10" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvLevelDes" runat="server" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtLevelDes" Text="Level Description is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
                         <tr>

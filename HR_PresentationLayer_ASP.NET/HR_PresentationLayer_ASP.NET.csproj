@@ -84,6 +84,7 @@
     <Content Include="AdminMaster.Master" />
     <Content Include="HRClerkMaster.Master" />
     <Content Include="Projectsearch.aspx" />
+    <Content Include="Resources\Images\Background.jpg" />
     <Content Include="RolesSearch.aspx" />
     <Content Include="SkillSearch.aspx" />
     <Content Include="SpecialitySearch.aspx" />
@@ -311,6 +312,7 @@
       <Name>HR_Exception</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -19,8 +19,10 @@
                                   <asp:TextBox ID="txtSpecialityName" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvSpecialityName" runat="server" Display="Dynamic" ErrorMessage="Enter Speciality Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtSpecialityName" Text="SpecialityName is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvSpecialityName" runat="server" Display="Dynamic" ErrorMessage="Enter Speciality Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtSpecialityName" Text="SpecialityName is Required"></asp:RequiredFieldValidator>
+                              <asp:RegularExpressionValidator ID="regSpecialityName" runat="server" ControlToValidate="txtSpecialityName" ValidationExpression="[A-Za-z0-9]+" Text="Please provide Speciality Name" ErrorMessage="[ Speciality Name is Required]" ForeColor="Red" Display="Dynamic"></asp:RegularExpressionValidator>
+      
+                        </td>
       
                         </tr>
 

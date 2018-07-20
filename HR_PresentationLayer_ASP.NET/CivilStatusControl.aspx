@@ -14,14 +14,14 @@
             </td>
             
             <td style="width: 248px">
-                <asp:TextBox ID="txtStatusDes" runat="server" ></asp:TextBox>
+                <asp:TextBox ID="txtStatusDes" runat="server" TextMode="MultiLine"></asp:TextBox>
                 
             </td>
-            <td>
-              <%--  <asp:RequiredFieldValidator ID="rfvCatName" runat="server" Display="Dynamic" ErrorMessage="Enter Category Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatName" Text="Category Name is Required"></asp:RequiredFieldValidator>
-               --%>
-
-            </td>
+           <td>
+                              <asp:RequiredFieldValidator ID="rfvStatusDesc" runat="server" Display="Dynamic" ErrorMessage="Enter Status Description" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtStatusDes" Text="Status Description is Required"></asp:RequiredFieldValidator>
+                              <asp:RegularExpressionValidator ID="regStatusDesc" runat="server" ControlToValidate="txtStatusDes" ValidationExpression="[0-9a-zA-Z #,-]+" Text="Please provide Status Description" ErrorMessage="[Status Description is  Required]" ForeColor="Red" Display="Dynamic"></asp:RegularExpressionValidator>
+                             
+                           </td>
 
       
         </tr>
@@ -47,5 +47,4 @@
     
 
 </asp:Content>
-
 

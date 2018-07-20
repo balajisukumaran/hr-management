@@ -13,52 +13,56 @@
                      <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+                                 <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvUserName" runat="server" Display="Dynamic" ErrorMessage="Enter User Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtUserName" Text="User Name is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvUserName" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtUserName" Text="User Name is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
 
                      <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
+                                 <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvPassword" runat="server" Display="Dynamic" ErrorMessage="Enter Password" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtPassword" Text="Password is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvPassword" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtPassword" Text="Password is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
 
                      <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
+                                 <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvFirstName" runat="server" Display="Dynamic" ErrorMessage="Enter FirstName" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtFirstName" Text="First Name is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvFirstName" runat="server" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtFirstName" Text="First Name is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
 
                     <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblLastName" runat="server" Text="Last Name"></asp:Label>
+                                 <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvLastName" runat="server" Display="Dynamic" ErrorMessage="Enter LastName" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtLastName" Text="Last Name is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvLastName" runat="server" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtLastName" Text="Last Name is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
 
@@ -70,8 +74,7 @@
 							<td style="width: 248px">  
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                              
-                     <%--           <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn"   Text="Insert" runat="server" style="left: 78px; top: 0px" OnClick="btnInsert_Click" />
-					--%>	
+                  
                                 <asp:Button ID="btn" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" OnClick="btn_Click" />
 							</td>
 							<td>

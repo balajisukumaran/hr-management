@@ -31,6 +31,24 @@ namespace HR_PresentationLayer_ASP.NET {
         protected global::System.Web.UI.WebControls.TextBox txtRoleName;
         
         /// <summary>
+        /// rfvRoleName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvRoleName;
+        
+        /// <summary>
+        /// regRoleName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regRoleName;
+        
+        /// <summary>
         /// btn control.
         /// </summary>
         /// <remarks>

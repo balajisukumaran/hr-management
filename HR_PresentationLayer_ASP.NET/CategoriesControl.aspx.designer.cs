@@ -31,6 +31,24 @@ namespace HR_PresentationLayer_ASP.NET {
         protected global::System.Web.UI.WebControls.TextBox txtCatName;
         
         /// <summary>
+        /// rfvCatName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCatName;
+        
+        /// <summary>
+        /// regCatName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regCatName;
+        
+        /// <summary>
         /// lblCatDesc control.
         /// </summary>
         /// <remarks>
@@ -47,6 +65,24 @@ namespace HR_PresentationLayer_ASP.NET {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCatDesc;
+        
+        /// <summary>
+        /// rfvCatDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCatDesc;
+        
+        /// <summary>
+        /// regCatDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regCatDesc;
         
         /// <summary>
         /// btnInsert control.

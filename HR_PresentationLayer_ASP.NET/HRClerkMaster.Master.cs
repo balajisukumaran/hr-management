@@ -13,5 +13,10 @@ namespace HR_PresentationLayer_ASP.NET
         {
 
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

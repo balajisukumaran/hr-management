@@ -42,7 +42,7 @@ balaji.CapgeminiDetails_HR_Batch4"></asp:SqlDataSource>
                        <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" SortExpression="EmployeeID" />
                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                        <asp:BoundField DataField="LevelId" HeaderText="LevelId" SortExpression="LevelId" />
-                       <asp:BoundField DataField="DateHired" HeaderText="DateHired" SortExpression="DateHired" />
+                       <asp:BoundField DataField="DateHired" DataFormatString="{0:MMM dd yyyy}" HeaderText="DateHired" SortExpression="DateHired" />
                        <asp:BoundField DataField="SpecialityId" HeaderText="SpecialityId" SortExpression="SpecialityId" />
                        <asp:BoundField DataField="StatusId" HeaderText="StatusId" SortExpression="StatusId" />
                    </Columns>

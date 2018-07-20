@@ -1,5 +1,4 @@
-﻿
-<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="RolesControl.aspx.cs" Inherits="HR_PresentationLayer_ASP.NET.RolesControl" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="RolesControl.aspx.cs" Inherits="HR_PresentationLayer_ASP.NET.RolesControl" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">
         
        
@@ -19,15 +18,14 @@
                 
             </td>
             <td>
-              <%--  <asp:RequiredFieldValidator ID="rfvRoleName" runat="server" Display="Dynamic" ErrorMessage="Enter Role Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtRoleName" Text="Role Name is Required"></asp:RequiredFieldValidator>
-               --%>
-
+                <asp:RequiredFieldValidator ID="rfvRoleName" runat="server" Display="Dynamic" ErrorMessage="Enter Role Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtRoleName" Text="Role Name is Required"></asp:RequiredFieldValidator>
+                 <asp:RegularExpressionValidator ID="regRoleName" runat="server" ControlToValidate="txtRoleName" ValidationExpression="[A-Za-z0-9]+" Text="Please provide Role Name" ErrorMessage="[ Role Name is Required]" ForeColor="Red" Display="Dynamic"></asp:RegularExpressionValidator>
+      
             </td>
 
       
         </tr>
         
-
                         <tr>
 							<td style="width: 173px">
 								
@@ -42,7 +40,6 @@
 							</td>
 						</tr>
 
-    
                  </table>
 			</center>
 		

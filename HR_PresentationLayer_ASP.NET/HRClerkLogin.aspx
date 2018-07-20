@@ -84,17 +84,24 @@
                 
                 <tr>
                     <td colspan="2">
-                            <asp:TextBox runat="server" ID="txtPassword" CssClass="validate"> </asp:TextBox>
+                            <asp:TextBox runat="server" ID="txtPassword" CssClass="validate" TextMode="Password"> </asp:TextBox>
                     </td>
                 </tr>
+                 <tr>
+                    <td class="auto-style2">
+                          <asp:label runat="server" ID="lblerror"></asp:label>
+                    </td>
+                   
+                </tr>
+
                 
                 <tr>
                     <td class="auto-style2">
-                            <div class="card-action">
+                      
           
-              <asp:HyperLink ID="hrlUsers" runat="server" Text="Login" NavigateUrl="~/EmployeeSearch.aspx" ></asp:HyperLink>
+              <asp:Button ID="btnLogin" runat="server"  Text="Login" OnClick="btnLogin_Click"  CssClass="waves-effect waves-light btn" ></asp:Button>
          
-        </div>
+    
                     </td>
                     <td>
                         <%--comment section--%>

@@ -81,7 +81,7 @@
                 
                 <tr>
                     <td colspan="2">
-                            <asp:TextBox runat="server" ID="txtPassword" CssClass="validate"> </asp:TextBox>
+                            <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" CssClass="validate"> </asp:TextBox>
                     </td>
                 </tr>
                 

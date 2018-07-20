@@ -11,61 +11,66 @@
                        <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblProjName" runat="server" Text="Project Name"></asp:Label>
+                                <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtProjName" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvProjName" runat="server" Display="Dynamic" ErrorMessage="Enter Project Name" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtProjName" Text="Project Name is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvProjName" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtProjName" Text="Project Name is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
                        <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblDescription" runat="server" Text="Description"></asp:Label>
+                                <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
-                                  <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>                
+                                  <asp:TextBox ID="txtDescription"  TextMode="MultiLine" Rows="6" Columns="10" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvDesc" runat="server" Display="Dynamic" ErrorMessage="Enter Description" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtDescription" Text="Description is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvDesc" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtDescription" Text="Description is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
                        <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblClient" runat="server" Text="Client"></asp:Label>
+                                <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtClient" runat="server"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvClient" runat="server" Display="Dynamic" ErrorMessage="Enter Client" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtClient" Text="Client is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:requiredfieldvalidator id="rfvclient" runat="server" display="dynamic"  forecolor="red" setfocusonerror="true" controltovalidate="txtclient" text="Client is required"></asp:requiredfieldvalidator>
+                        </td>
       
                         </tr>
                      <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblStartDate" runat="server" Text="Start Date:"></asp:Label>
+                                <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtStartDate" runat="server" CssClass="browser-default" TextMode="Date"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvStartDate" runat="server" Display="Dynamic" ErrorMessage="Enter StartDate" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtStartDate" Text="StartDate is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvStartDate" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtStartDate" Text="StartDate is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
                        <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblEndDate" runat="server" Text="End Date:"></asp:Label>
+                                <asp:Label Text="*" runat="server" ForeColor="Red"></asp:Label>
                             </td>
                             <td style="width: 248px">
                                   <asp:TextBox ID="txtEndDate" runat="server" CssClass="browser-default" TextMode="Date"></asp:TextBox>                
                             </td>
                             <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvEndDate" runat="server" Display="Dynamic" ErrorMessage="Enter EndDate" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtEndDate" Text="EndDate is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
+                              <asp:RequiredFieldValidator ID="rfvEndDate" runat="server" Display="Dynamic"  ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtEndDate" Text="EndDate is Required"></asp:RequiredFieldValidator>
+                        </td>
       
                         </tr>
 
