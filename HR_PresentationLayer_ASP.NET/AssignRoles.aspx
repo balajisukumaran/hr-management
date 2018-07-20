@@ -5,24 +5,14 @@
     <br />
 			<center>
 				<table style="width:auto ">
-					    <tr>
-							<td style="width: 173px">
-								<asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
-							</td>
-							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" runat="server" ID="btnSelectById" Width="244px"></asp:DropDownList>           
-							</td>
-							<td>
-								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-								--%>
-							</td>
-						</tr>
+				
                         <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="ldlUserId" runat="server" Text="User ID"></asp:Label>
                             </td>
                             <td style="width: 248px">
-                                 						<asp:DropDownList CssClass="browser-default" runat="server" ID="ddUserId" Width="244px"></asp:DropDownList>             
+                                 						<asp:DropDownList CssClass="browser-default" runat="server" ID="ddUserId" Width="244px" DataSourceID="SqlDataSource1" DataTextField="UserId" DataValueField="UserId"></asp:DropDownList>             
+                                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select * from balaji.Users_HR_Batch4"></asp:SqlDataSource>
                             </td>
                             <td>
 <%--                              <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -34,7 +24,8 @@
                                  <asp:Label ID="lblRole" runat="server" Text="Role"></asp:Label>
                             </td>
                             <td style="width: 248px">
-                               						<asp:DropDownList CssClass="browser-default" runat="server" ID="ddRole" Width="244px"></asp:DropDownList>             
+                               						<asp:DropDownList CssClass="browser-default" runat="server" ID="ddRole" Width="244px" DataSourceID="SqlDataSource2" DataTextField="RoleName" DataValueField="RoleId"></asp:DropDownList>             
+                                                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:16MayCHNConnectionString %>" SelectCommand="select * from balaji.Roles_HR_Batch4"></asp:SqlDataSource>
                             </td>
                             <td>
 <%--                              <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
@@ -44,7 +35,7 @@
                         <tr>
 							<td style="width: 173px">
 								
-						<asp:Button runat="server" CssClass="waves-effect waves-light btn" Text="Add New" ID="btnAdd" style="left: 0px; top: -11px"  />
+						<asp:Button runat="server" CssClass="waves-effect waves-light btn" Text="Add New" ID="btnAdd" style="left: 0px; top: -11px" OnClick="btnAdd_Click"  />
                               
 								
 							</td>

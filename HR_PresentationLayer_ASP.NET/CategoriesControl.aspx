@@ -5,30 +5,7 @@
     <br />
 			<center>
 				<table style="width:auto ">
-					  <tr>
-            <td style="width: 173px">
-                <asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
-            </td>
-            <td style="width: 238px">
-                 <asp:DropDownList CssClass="browser-default" runat="server" Width="244px"></asp:DropDownList>           
-            </td>
-            <td>
-            <%--                <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-            --%></td>
-      
-        </tr>
-        <tr>
-            <td style="width: 173px">
-                <asp:Label ID="lblCatId" runat="server" Text="Category ID"></asp:Label>
-            </td>
-            <td style="width: 238px">
-                <asp:TextBox ID="txtCatId" runat="server"></asp:TextBox>                
-            </td>
-            <td>
-<%--                <asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-            --%></td>
-      
-        </tr>
+
 
         <tr>
             <td style="width: 173px">
@@ -70,7 +47,7 @@
 							</td>
 							<td style="width: 248px">  
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" />  
+                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" OnClick="btnInsert_Click" />  
 							</td>
 							<td>
 								

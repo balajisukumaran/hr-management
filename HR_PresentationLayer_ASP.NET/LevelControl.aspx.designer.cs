@@ -13,33 +13,6 @@ namespace HR_PresentationLayer_ASP.NET {
     public partial class LevelControl {
         
         /// <summary>
-        /// SelectByID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SelectByID;
-        
-        /// <summary>
-        /// lblLevelId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLevelId;
-        
-        /// <summary>
-        /// txtLevelId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLevelId;
-        
-        /// <summary>
         /// lblLevDes control.
         /// </summary>
         /// <remarks>
@@ -58,12 +31,12 @@ namespace HR_PresentationLayer_ASP.NET {
         protected global::System.Web.UI.WebControls.TextBox txtLevelDes;
         
         /// <summary>
-        /// btnInsert control.
+        /// btnIns control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInsert;
+        protected global::System.Web.UI.WebControls.Button btnIns;
     }
 }

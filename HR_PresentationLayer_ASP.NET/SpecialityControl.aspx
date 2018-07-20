@@ -10,31 +10,7 @@
     <br />
 			<center>
 				<table style="width:auto ">
-		  <tr>
-							<td style="width: 173px">
-								<asp:Label ID="SelectByID" runat="server" Text="Select By ID"></asp:Label>
-							</td>
-							<td style="width: 248px">
-								<asp:DropDownList CssClass="browser-default" runat="server" Width="244px"></asp:DropDownList>           
-							</td>
-							<td>
-								<%--<asp:RequiredFieldValidator ID="rfvCatId" runat="server" Display="Dynamic" ErrorMessage="Enter Category Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtCatId" Text="CategoryId is Required"></asp:RequiredFieldValidator>
-								--%>
-							</td>
-						</tr>
-                        <tr>
-                            <td style="width: 173px">
-                                 <asp:Label ID="lblSpecialityId" runat="server" Text="Speciality ID"></asp:Label>
-                            </td>
-                            <td style="width: 248px">
-                                  <asp:TextBox ID="txtSpecialityId" runat="server"></asp:TextBox>                
-                            </td>
-                            <td>
-<%--                              <asp:RequiredFieldValidator ID="rfvSpecialityId" runat="server" Display="Dynamic" ErrorMessage="Enter Speciality Id" ForeColor="Red" SetFocusOnError="True" ControlToValidate="txtSpecialityId" Text="SpecialityId is Required"></asp:RequiredFieldValidator>
-            --%>            </td>
-      
-                        </tr>
-
+	
                       <tr>
                             <td style="width: 173px">
                                  <asp:Label ID="lblSpecialityName" runat="server" Text="Speciality Name"></asp:Label>
@@ -54,7 +30,7 @@
 							</td>
 							<td style="width: 248px">  
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" runat="server" style="left: 78px; top: 0px" />  
+                                <asp:Button ID="btnInsert" CssClass="waves-effect waves-light btn" Text="Insert" OnClick="btnInsert_Click" runat="server" style="left: 78px; top: 0px" />  
 							</td>
 							<td>
 								

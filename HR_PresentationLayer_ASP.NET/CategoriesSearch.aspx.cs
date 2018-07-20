@@ -26,7 +26,15 @@ namespace HR_PresentationLayer_ASP.NET
 
             Panel1.Visible = true;
             Panel2.Visible = false;
-            DropDownList1.DataSourceID = "SqlDataSource4";
+            DropDownList1.DataSourceID = "SqlDataSource1";
+        }
+
+        protected void Btn_Click(object sender, EventArgs e)
+        {
+            Panel1.Visible = true;
+            Panel2.Visible = false;
+            DropDownList1.DataSourceID = "SqlDataSource1";
+
         }
     }
 }

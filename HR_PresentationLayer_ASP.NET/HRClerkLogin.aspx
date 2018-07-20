@@ -54,7 +54,7 @@
             <table>
                 <tr>
                          <td class="auto-style1" colspan="2"> 
-                             <span class="card-title">Admin Login</span>
+                             <span class="card-title">HRClerk Login</span>
                          </td>
                </tr>
                 <tr>
@@ -62,7 +62,7 @@
                         <asp:label runat="server" for="txtUsername">Username</asp:label>
                     </td>
                     <td>
-
+<%--                        comments section--%>
                     </td>
                 </tr>
                 
@@ -76,7 +76,10 @@
                     <td class="auto-style2">
                           <asp:label runat="server" for="txtPassword">Password</asp:label>
                     </td>
-                    <td></td>
+                    <td>
+
+                        <%--comments section--%>
+                    </td>
                 </tr>
                 
                 <tr>
@@ -94,7 +97,7 @@
         </div>
                     </td>
                     <td>
-
+                        <%--comment section--%>
                     </td>
                 </tr>
             </table>
