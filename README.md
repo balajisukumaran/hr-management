@@ -1,4 +1,4 @@
-# HRManagementRepo
+# HR Management
 
 ## Project Overview
 This project was developed as part of the Capgemini training program. It is designed to demonstrate and practice the concept of layered architecture in software development. The primary function of this application is to manage employee details within an HR Management context.
